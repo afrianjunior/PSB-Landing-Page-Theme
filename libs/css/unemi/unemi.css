@@ -1,4 +1,4 @@
-@import url(https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans:400,300,600,400italic,300italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600);
 .window {
   width: 40%;
   height: 350px;
@@ -12,7 +12,13 @@
     background: #ebebeb;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
     height: 30px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 5px;
     z-index: 2; }
@@ -63,6 +69,9 @@
   padding: 10px 20px; }
 
 .ui.menu {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center; }
 
 .ui.secondary.menu {
@@ -79,12 +88,17 @@
 
 body {
   color: #323232;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans";
   font-weight: 300; }
+
+a {
+  color: #ebebeb; }
+  a:hover {
+    color: #d5cfcf; }
 
 h1, h2, h3, h4, h5, h6 {
   text-indent: 10px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans";
   font-weight: 300; }
 
 .header {
@@ -121,18 +135,38 @@ h1, h2, h3, h4, h5, h6 {
 .three {
   background: #ebebeb; }
   .three .ui.two.column.grid .row {
-    margin: 40px 0px; }
+    margin: 50px auto; }
     .three .ui.two.column.grid .row .column {
-      text-align: center; }
+      text-align: center;
+      width: 45%; }
+      .three .ui.two.column.grid .row .column:first-child {
+        margin-left: auto; }
+      .three .ui.two.column.grid .row .column:last-child {
+        margin-right: auto; }
 
 .four {
   background: #e84c3d;
   text-align: center;
   color: #ebebeb;
-  padding: 30px; }
+  padding: 60px 0px; }
   .four h1 {
     font-size: 30px; }
   .four .ui.action.input {
     margin: 10px 0px; }
+  .four .icon-social {
+    margin: 20px 0px 0px 0px; }
+    .four .icon-social i {
+      font-size: 20px; }
+      .four .icon-social i:first-child {
+        margin-right: 30px; }
 
-/*# sourceMappingURL=unemi.css.map */
+footer {
+  background: #ebebeb;
+  text-align: center;
+  padding: 40px 0px;
+  overflow: hidden; }
+  footer span:last-child {
+    font-style: italic;
+    font-size: 12px; }
+  footer a {
+    color: #323232; }

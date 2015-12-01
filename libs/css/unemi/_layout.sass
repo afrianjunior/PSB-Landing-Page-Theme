@@ -1,13 +1,19 @@
 body
   color: $misty
   font:
-    family: 'Open Sans', sans-serif
+    family: 'Open Sans'
     weight: 300
    
+a
+  color: $smoke
+
+  &:hover
+    color: $smoke-bold
+
 h1, h2, h3, h4, h5, h6
   text-indent: 10px
   font:
-    family: 'Open Sans', sans-serif
+    family: 'Open Sans'
     weight: 300
 
 .header
@@ -51,22 +57,54 @@ h1, h2, h3, h4, h5, h6
   background: $smoke
 
   .ui.two.column.grid .row
-    margin: 40px 0px
+    
+    margin: 50px auto
+    
     
     .column
       text-align: center
+      width: 45%
+    
+      &:first-child
+        margin-left: auto
+      &:last-child
+        margin-right: auto
     
 .four
   background: $alizarin
   text-align: center
   color: $smoke
-  padding: 30px
+  padding: 60px 0px
 
   h1
     font-size: 30px
     
   .ui.action.input
     margin: 10px 0px
+    
+    
+  .icon-social
+    margin: 20px 0px 0px 0px
+    
+    i
+      font-size: 20px
+    
+      &:first-child
+        margin-right: 30px
 
+footer
+  background: $smoke
+  text-align: center
+  padding: 40px 0px
+  overflow: hidden
+
+  span
+    
+    &:last-child
+      font-style: italic
+      font-size: 12px
+  
+  a
+    color: $misty
 
   
