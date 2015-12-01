@@ -1,0 +1,138 @@
+@import url(https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans:400,300,600,400italic,300italic);
+.window {
+  width: 40%;
+  height: 350px;
+  border-radius: 5px;
+  position: relative;
+  bottom: 160px;
+  overflow: hidden;
+  margin: 0 auto;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4); }
+  .window .window-bar {
+    background: #ebebeb;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    z-index: 2; }
+    .window .window-bar .window-bar-button.red {
+      background: #f16b64; }
+    .window .window-bar .window-bar-button.yellow {
+      background: #efcc6b; }
+    .window .window-bar .window-bar-button.green {
+      background: #6df29e; }
+    .window .window-bar .window-bar-button {
+      padding: 4px;
+      display: inline-block;
+      margin: 0 5px;
+      border-radius: 100%; }
+  .window .window-view {
+    height: 100%;
+    z-index: 0;
+    background-image: url("../../img/index.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+
+.fiture {
+  width: 40%;
+  margin: 0 auto; }
+  .fiture [class^="flaticon-"], .fiture [class*=" flaticon-"] {
+    line-height: 80px;
+    margin: 0; }
+    .fiture [class^="flaticon-"]:before, .fiture [class*=" flaticon-"]:before {
+      font-size: 80px;
+      margin: 0;
+      color: #e84c3d; }
+
+.ui.action.input input {
+  font-size: 17px; }
+.ui.action.input input[type="email"] {
+  border-radius: 0px;
+  background: #ebebeb;
+  color: #e84c3d;
+  border: none;
+  padding: 10px;
+  width: 400px; }
+.ui.action.input input[type="submit"] {
+  border-radius: 0px;
+  background: #ebebeb;
+  color: #e84c3d;
+  border: none;
+  padding: 10px 20px; }
+
+.ui.menu {
+  justify-content: center; }
+
+.ui.secondary.menu {
+  margin-right: auto;
+  margin-left: auto; }
+  .ui.secondary.menu a.item {
+    color: white; }
+    .ui.secondary.menu a.item:hover {
+      color: white; }
+  .ui.secondary.menu a.active.item {
+    background: none; }
+    .ui.secondary.menu a.active.item:hover {
+      color: white; }
+
+body {
+  color: #323232;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-indent: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
+
+.header {
+  height: 100vh;
+  background-image: url("../../img/overlayblack.png"), url("../../img/bgheader.jpg");
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+  background-position: left top, top center; }
+
+.cover {
+  height: 100%;
+  display: block;
+  text-align: center;
+  padding: 60px 0px;
+  color: #ebebeb; }
+  .cover img {
+    margin: 0 auto; }
+  .cover h1 {
+    font-size: 40px; }
+
+.second {
+  text-align: center;
+  padding: 60px 0px;
+  background-image: url("../../img/overlay.png"), url("../../img/bgsecond.jpg");
+  background-position: left top, bottom center;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat; }
+  .second .second-desc {
+    margin-top: -90px; }
+    .second .second-desc h1 {
+      font-size: 30px;
+      line-height: 3px; }
+
+.three {
+  background: #ebebeb; }
+  .three .ui.two.column.grid .row {
+    margin: 40px 0px; }
+    .three .ui.two.column.grid .row .column {
+      text-align: center; }
+
+.four {
+  background: #e84c3d;
+  text-align: center;
+  color: #ebebeb;
+  padding: 30px; }
+  .four h1 {
+    font-size: 30px; }
+  .four .ui.action.input {
+    margin: 10px 0px; }
+
+/*# sourceMappingURL=unemi.css.map */

@@ -1,0 +1,76 @@
+.window
+  width: 40%
+  height: 350px
+  border-radius: 5px
+  position: relative
+  bottom: 160px
+  overflow: hidden
+  margin: 0 auto
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4)
+  
+  .window-bar
+    background: $smoke
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4)
+    height: 30px
+    display: flex
+    align-items: center
+    padding: 5px
+    z-index: 2
+    
+    .window-bar-button.red
+      background: #f16b64
+        
+    .window-bar-button.yellow
+      background: #efcc6b
+    
+    .window-bar-button.green
+      background: #6df29e
+    
+    .window-bar-button
+      padding: 4px
+      display: inline-block
+      margin: 0 5px
+      border-radius: 100%
+    
+  .window-view
+    height: 100%
+    z-index: 0
+    background: 
+      image: url('../../img/index.jpg')
+      size: cover
+      repeat: no-repeat
+      position: center
+    
+.fiture
+  width: 40%
+  margin: 0 auto
+
+  [class^="flaticon-"], [class*=" flaticon-"]
+    line-height: 80px
+    margin: 0
+    
+    
+    &:before
+      font-size: 80px
+      margin: 0
+      color: $alizarin
+  
+.ui.action.input
+    
+  input
+    font-size: 17px
+    
+  input[type="email"]
+    border-radius: 0px
+    background: $smoke
+    color: $alizarin
+    border: none
+    padding: 10px
+    width: 400px
+    
+  input[type="submit"]
+    border-radius: 0px
+    background: $smoke
+    color: $alizarin
+    border: none
+    padding: 10px 20px
